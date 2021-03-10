@@ -11,6 +11,7 @@
 	<ui:define name="contents">
 		<h:form id="frmPerson">
 			<p:autoUpdate />
+			<p:growl/>
 			<p:panelGrid columns="4" style="margin:auto;" styleClass="shaddow">
 				<f:facet name="header">Person Form</f:facet>
 
@@ -33,7 +34,7 @@
 					<div align="center">
 						<p:commandButton value="Add" action="#{controller.add}"
 							rendered="#{controller.allowAdd}" process="@form" />
-						<p:commandButton value="Save" action="#{controller.update}"
+						<p:commandButton value="Update" action="#{controller.update}"
 							rendered="#{controller.allowUpdate}" process="@form" />
 						<p:commandButton value="Delete" action="#{controller.delete}"
 							rendered="#{controller.allowDelete}" process="@this" />
