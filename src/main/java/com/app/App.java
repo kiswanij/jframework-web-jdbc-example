@@ -7,7 +7,7 @@ import com.jk.web.embedded.JKWebApplication;
 public class App {
 	public static void main(String[] args) {
 		JKDataAccessService da = JKDataAccessFactory.getDataAccessService();
-		if (!da.isTableExists("person")) {
+		if (!da.isTableExists("PERSON")) {
 			da.runScript("/script.sql");
 		}
 		JKWebApplication.run(8080);
