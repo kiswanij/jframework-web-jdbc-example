@@ -1,11 +1,11 @@
 package com.app.person;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
 
-import java.sql.*;
-import java.util.*;
-
-import com.jk.db.dataaccess.core.JKDataAccessService;
-import com.jk.db.datasource.JKDataAccessFactory;
+import com.jk.data.dataaccess.JKDataAccessFactory;
+import com.jk.data.dataaccess.core.JKDataAccessService;
 
 public class DataAccess {
 	JKDataAccessService service = JKDataAccessFactory.getDataAccessService();
