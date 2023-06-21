@@ -6,3 +6,4 @@ target
 *.db
 logs
 .metadata
+/.tern-project
