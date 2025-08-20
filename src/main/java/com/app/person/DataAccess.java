@@ -5,10 +5,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 import com.jk.data.dataaccess.JKDataAccessFactory;
-import com.jk.data.dataaccess.core.JKDataAccessService;
+import com.jk.data.dataaccess.core.JKDataAccess;
 
 public class DataAccess {
-	JKDataAccessService service = JKDataAccessFactory.getDataAccessService();
+	JKDataAccess service = JKDataAccessFactory.getDataAccessService();
 
 	/////////////////////////////////////////
 	public void add(Model person) {
