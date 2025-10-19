@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui" xmlns:jk="http://xmlns.jcp.org/jsf/composite/jk">
 <h:head>
 	<f:facet name="first">
 		<title>J-Framework Demo</title>
@@ -25,6 +25,7 @@
 	<script src="#{util.path}page.js?reload=#{util.reloadRandom()}" />
 </h:head>
 <h:body>
+	<jk:theme-selector />
 	<div id="wrapper">
 		<ui:include src="inc/menu.xhtml" />
 		<div>
